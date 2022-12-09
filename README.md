@@ -13,4 +13,7 @@
 conda create -p venv python==3.9.7 -y
 ```
 
-
+### To activate the new environment 
+```
+conda activate "environment name"/
+```
