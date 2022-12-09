@@ -25,7 +25,7 @@ def predict_api():
     print(np.array(list(data.values())).reshape(1,-1))
     # convert the values as per the scaling
     new_data = scalar.transform(np.array(list(data.values())).reshape(1,-1))
-    output = regmodel.predict(new_dat)
+    output = regmodel.predict(new_data)
     print(output[0])
     # to convert from 2d array
     return jsonify(output[0])
