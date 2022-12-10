@@ -32,7 +32,7 @@ def predict_api():
 
 
 #for web application
-@app.route('/predict', method=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     data = [float(x) for x in request.form.values()]
     final_input = scalar.transform(np.array(data).reshape(1,-1))
